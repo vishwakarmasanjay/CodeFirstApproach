@@ -1,0 +1,31 @@
+﻿
+<html>
+<head>
+    <title>Code First</title>
+    <style>
+        body {font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; }
+        a {text-decoration:none; }
+        input[type=button], input[type=submit] {padding:5px 15px; border:1px solid #b9b4b4; color:#000 }
+        input[type=button]:hover {color:#fff; background:#000; border:1px solid #000}
+        input[type=text],input[type=email],select  {padding:3px; border:1px solid #b9b4b4; text-decoration:none; color:#000; margin-bottom:10px; width:20%}
+        table{ font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; border-collapse: collapse; width: 100%;}
+        table td, table th{ border: 1px solid #ddd; padding:2px 5px; }
+        tables tr:nth-child(even){background-color: #f2f2f2;}
+        table tr:hover {background-color: #ddd;}
+        table th{ padding:5px; text-align: left; background-color: #808080; color: white; }
+
+        .details { }
+        .details .header { background-color: #ddd; float:left; border: 1px solid #ddd; padding:2px 5px; width:10%; }
+        .details .val { float:left; border: 1px solid #ddd; padding:2px 5px; width:30%; }
+        .clear {clear: both}
+    </style>
+</head>
+<body>
+    <center>
+        <a href="/Employees"> <input type="button" value="Employee"/> </a>
+        <a href="/Departments"><input type="button" value="Department" />  </a>
+    </center>
+
+    @RenderBody()
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿@model CFUsingEF.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <div class="details">
+        <div class="header">
+            @Html.DisplayNameFor(model => model.Departments.name)
+        </div>
+        <div class="val">
+            @Html.DisplayFor(model => model.Departments.name)
+        </div>
+        <div class="clear"></div>
+
+        <div class="header">
+            @Html.DisplayNameFor(model => model.Name)
+        </div>
+        <div class="val">
+            @Html.DisplayFor(model => model.Name)
+        </div>
+        <div class="clear"></div>
+
+        <div class="header">
+            @Html.DisplayNameFor(model => model.Email)
+        </div>
+
+        <div class="val">
+            @Html.DisplayFor(model => model.Email)
+        </div>
+        <div class="clear"></div>
+
+        <div class="header">
+            @Html.DisplayNameFor(model => model.Mobile)
+        </div>
+
+        <div class="val">
+            @Html.DisplayFor(model => model.Mobile)
+        </div>
+        <div class="clear"></div>
+
+        <div class="header">
+            @Html.DisplayNameFor(model => model.Address)
+        </div>
+
+        <div class="val">
+            @Html.DisplayFor(model => model.Address)
+        </div>
+        <div class="clear"></div>
+
+        <div class="header">
+            @Html.DisplayNameFor(model => model.City)
+        </div>
+
+        <div class="val">
+            @Html.DisplayFor(model => model.City)
+        </div>
+        <div class="clear"></div>
+
+        <div class="header">
+            @Html.DisplayNameFor(model => model.State)
+        </div>
+
+        <div class="val">
+            @Html.DisplayFor(model => model.State)
+        </div>
+
+    </div>
+</div>
+<div class="clear"></div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmployeeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

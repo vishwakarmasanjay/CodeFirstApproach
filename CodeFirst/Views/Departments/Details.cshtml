@@ -1,0 +1,23 @@
+﻿@model CFUsingEF.Models.Department
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h4>Department</h4>
+    <hr />
+    <div class="details">
+        <div class="header">
+            @Html.DisplayNameFor(model => model.name)
+        </div>
+        <div class="val">
+            @Html.DisplayFor(model => model.name)
+        </div>
+        <div class="clear"></div>
+    </div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DepartmentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
